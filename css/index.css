@@ -1,0 +1,102 @@
+html {
+  font-family: "Taviraj", serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E7E9EE;
+}
+body .grid {
+  display: grid;
+  grid-template-areas: "header header header" "img img img" "bio bio bio" "footer footer footer";
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  margin: 1rem 3rem;
+}
+body .grid header {
+  background: #111318;
+  border-radius: 0.8rem 0.8rem 0 0;
+  display: flex;
+  grid-area: header;
+}
+body .grid header h1 {
+  color: #E7E9EE;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 4rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 50%;
+}
+body .grid header cite {
+  color: #E7E9EE;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 50%;
+}
+body .grid .img {
+  grid-area: img;
+  height: 100vh;
+}
+body .grid .img figure {
+  height: 100%;
+}
+body .grid .img figure img {
+  height: 95%;
+  object-fit: cover;
+  vertical-align: top;
+  width: 100%;
+}
+body .grid .img figure figcaption {
+  background: #121212;
+  color: #E7E9EE;
+  text-align: center;
+}
+body .grid .bio {
+  background: #111318;
+  border-radius: 0 0 0.8rem 0.8rem;
+  grid-area: bio;
+  height: 200vh;
+  width: 100%;
+}
+body .grid .bio article {
+  margin: 0 auto;
+  width: 60%;
+}
+body .grid .bio article h2 {
+  color: #E7E9EE;
+  font-family: "El Messiri", sans-serif;
+  font-size: 3rem;
+  margin: 9rem 0 5rem 0;
+  text-align: center;
+  width: 100%;
+}
+body .grid .bio article ul {
+  color: #E7E9EE;
+  margin: 0 auto;
+  width: 96%;
+}
+body .grid .bio cite {
+  color: #E7E9EE;
+  display: block;
+  font-family: "El Messiri", sans-serif;
+  font-size: 2rem;
+  grid-area: cite;
+  margin: 9rem auto 0 auto;
+  width: 60%;
+}
+body .grid footer {
+  align-items: center;
+  display: flex;
+  grid-area: footer;
+  height: 5rem;
+  justify-content: center;
+  padding: 5rem 0;
+}
+body .grid footer h3 {
+  text-align: center;
+  width: 60%;
+}
+
+/*# sourceMappingURL=index.css.map */

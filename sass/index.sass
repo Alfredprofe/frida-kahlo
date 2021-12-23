@@ -1,0 +1,101 @@
+//Styles for index.html
+@import fonts.sass, colores.sass
+
+html
+    font-family: $texto
+    font-size: 16px
+    box-sizing: border-box
+
+body
+    background: $claro
+
+    .grid
+        display: grid
+        grid-template-areas: "header header header" "img img img" "bio bio bio" "footer footer footer"
+        grid-gap: 1rem
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(5, auto)
+        margin: 1rem 3rem
+
+        header
+            background: $oscuro
+            border-radius: 0.8rem 0.8rem 0 0
+            display: flex
+            grid-area: header
+
+            h1
+                color: $claro
+                font-family: $titulo
+                font-size: 4rem
+                padding: 1rem 0
+                text-align: center
+                width: 50%
+
+            cite
+                color: $claro
+                font-size: 1.8rem
+                padding: 1rem 0
+                width: 50%
+
+        .img
+            grid-area: img
+            height: 100vh
+
+            figure
+                height: 100%
+
+                img
+                    height: 95%
+                    object-fit: cover
+                    vertical-align: top
+                    width: 100%
+
+                figcaption
+                    background: #121212
+                    color: $claro
+                    text-align: center
+
+        .bio
+            background: $oscuro
+            border-radius: 0 0 0.8rem 0.8rem
+            grid-area: bio
+            height: 200vh
+            width: 100%
+
+            article
+                margin: 0 auto
+                width: 60%
+
+                h2
+                    color: $claro
+                    font-family: $subtitulo
+                    font-size: 3rem
+                    margin: 9rem 0 5rem 0
+                    text-align: center
+                    width: 100%
+
+                ul
+                    color: $claro
+                    margin: 0 auto
+                    width: 96%
+
+            cite
+                color: $claro
+                display: block
+                font-family: $subtitulo
+                font-size: 2rem
+                grid-area: cite
+                margin: 9rem auto 0 auto
+                width: 60%
+
+        footer
+            align-items: center
+            display: flex
+            grid-area: footer
+            height: 5rem
+            justify-content: center
+            padding: 5rem 0
+
+            h3
+                text-align: center
+                width: 60%
